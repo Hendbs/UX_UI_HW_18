@@ -49,6 +49,7 @@ header {
     justify-content: space-between;
     margin-top: -30px;
 }
+
 header .button {
     position: relative;
     background-color: black;
@@ -100,42 +101,9 @@ header nav ul li a {
 
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-
-.case4 .card-image4 {
-    width: 50%;
-    min-height: 300px;
-    background-image: url('../images/User\ Research.png');
-    background-size: 100%; 
-    background-repeat: no-repeat;
-    margin-top: -10px;
-    margin-left: 70px;
-
-}
-
-
-.case5 .card-image5 {
-    width: 40%;
-    min-height: 300px;
-    background-image: url('../images/UI\ Design.png');
-    background-size: 100%; 
-    background-repeat: no-repeat;
-    margin-top: -10px;
-    margin-left: 90px;
-
-}
-
-
-.case6 .card-image6 {
-    width: 50%;
-    min-height: 300px;
-    background-image: url('../images/Tools.png');
-    background-size: 100%; 
-    background-repeat: no-repeat;
-    margin-top: -10px;
-    margin-left: 70px;
-}
 
 .card-container1 {
     display: flex;
@@ -146,18 +114,28 @@ header nav ul li a {
 
 
 .card1 {
-    width: 300px;
-    margin-right: 50px;
+    width: 400px;
+    margin-right: 25px;
     height: 150px;
-    padding: 30px;
     border: 1px solid black;
     box-shadow: 0 15px 20px rgba(0,0,0,.15);
  
 }
 
 .card-body-skills {
+    padding: 30px;
+    margin-top: -50px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+ 
+}
+
+
+
+
+/*.card-body-skills {
     background-color: #FFFBF5;
-    min-height: 20x0px;
+    height: 150px;;
     padding: 30px;
     padding-top: 5px;
     margin-top: -80px;
@@ -167,26 +145,6 @@ header nav ul li a {
 .card-body-skills h4 {
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -241,7 +199,7 @@ header nav ul li a {
     margin-bottom: 10px;
 }
 .card-body a {
-    color: white;
+    color: #FFFBF5;
     padding: 5px;
     font-size: 12px;
     background-color: black;
@@ -297,14 +255,14 @@ footer {
 footer .footer-social ul li {
     margin: 50px;
     float: right;
-    display: inline-block;
+    list-style: none;
     padding-right: 70px;
     margin-top: -50px;
 }
 
 /* Responsive */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .grid {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -315,9 +273,64 @@ footer .footer-social ul li {
 
 }
 
+
+@media screen and (max-width: 600px) {
+    .card-container1 {
+        display: inline-block; 
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card-container2 {
+        display: inline-flex;
+        width: 100%;
+    
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+    }
+
+    .footer-message {
+        position: relative;
+        display: block;
+        font-size: medium;
+    }
+
+    .footer-social ul li {
+
+        display: inline-block;
+        width: 10%;
+
+    }
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Animations */
 
-.bounce {
+/*.bounce {
     animation: bounce 2s infinite;
 }
 
@@ -331,4 +344,46 @@ footer .footer-social ul li {
     60% {
         transform: translateY(-15);
     }
+}
+
+
+
+
+
+
+
+/* skills images */
+
+/*.case4 .card-image4 {
+    width: 50%;
+    min-height: 300px;
+    background-image: url('../images/User\ Research.png');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    margin-left: 70px;
+
+}
+
+
+.case5 .card-image5 {
+    width: 40%;
+    min-height: 300px;
+    background-image: url('../images/UI\ Design.png');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    margin-left: 90px;
+
+}
+
+
+.case6 .card-image6 {
+    width: 50%;
+    min-height: 300px;
+    background-image: url('../images/Tools.png');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    margin-left: 70px;
 }
